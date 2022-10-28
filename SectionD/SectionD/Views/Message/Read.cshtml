@@ -1,0 +1,18 @@
+﻿@model SectionD.Models.Message
+
+@if (Model == null)
+{
+    <div>
+        Message is not availabe;
+    </div>
+}
+else
+{
+    <div>
+        <b>
+            @Html.DisplayFor(Model => Model.Text)
+        </b>
+    </div>
+    @:This message self-destructs in <span id="cw_count_down"></span> secs.
+}
+
